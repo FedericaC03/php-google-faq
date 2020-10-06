@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+.container {
+  padding: 10px;
+  width: 70%;
+  background-color: lightgrey;
+  margin:auto;
+}
+
+li {
+  margin:40px 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin: 20px 0 ;
+}
+
+h2 {
+  color: blue;
+}
+
+/* <ul>
+  <?php foreach ($faqs as $faq): ?>
+  <li>
+      <?php foreach ($faq as $key => $value): ?>
+         <?php echo $value."<br>"; ?>
+      <?php endforeach ?>
+      <hr>
+  </li>
+<?php endforeach ?>
+</ul> */
