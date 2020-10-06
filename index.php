@@ -33,19 +33,36 @@ $faqs = [
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
+    <header>
+      <div class="header-top">
+        <img src="logo.png" alt="logo">
+        <p>Privacy e termini</p>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>Introduzione</li>
+          <li>Norme sulla privacy</li>
+          <li>Termini di servizio</li>
+          <li>Tecnologie</li>
+          <li class="active">Domande frequenti</li>
+        </ul>
 
-    <h1>Domande frequenti:</h1>
-    <ul>
-      <?php foreach ($faqs as $faq): ?>
-        <li>
-          <h2> <?php echo $faq["domanda"]; ?> </h2>
-          <br>
-          <?php echo $faq["risposta"]; ?>
-        </li>
-      <?php endforeach ?>
-    </ul>
-  </div>
+       </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <ul>
+          <?php foreach ($faqs as $faq): ?>
+            <li>
+              <h2> <?php echo $faq["domanda"]; ?> </h2>
+              <br>
+                <p class="paragraph"> <?php echo $faq["risposta"]; ?> </p>
+            </li>
+          <?php endforeach ?>
+        </ul>
+      </div>
+  </main>
 
   </body>
 </html>
